@@ -1,31 +1,69 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div class="container">
     <router-view />
   </div>
 </template>
 
 <style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+  @import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  html { font-size: 22px; }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  html, body { height: 100%; }
+
+  body {
+    display: grid;
+    margin: 0;
+  }
+
+  body,
+  input {
+    background-color: #3D3D3B;
+  }
+
+  body,
+  button,
+  input {
+    color: #F4F4F4;
+    font-family: "Concert One", sans-serif;
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: auto;
+  }
+
+  button {
+    background-color: #7F8489;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    margin: 0.5rem 0;
+    transition: background-color 0.5s;
+  }
+
+  button:hover {
+    background-color: #6C7175;
+  }
+
+  input {
+    padding: 0.4rem;
+    border: solid 1px #7F8489;
+  }
+
+  .my-5 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .badge {
+    background-color: #525F7F;
+    border-radius: 5px;
+    padding: 0.25rem;
+  }
 </style>

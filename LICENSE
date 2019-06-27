@@ -1,37 +1,3 @@
-# Math Game
-
-Answer simple arithmetic problems to advance to the next level.
-
-![Demonstration](math-game-demo.gif)
-
-## Installation
-```
-git clone https://github.com/travishorn/math-game.git
-cd math-game
-npm install
-```
-
-## Compile and hot-reload for development
-```
-npm run serve
-```
-
-The development server runs at http://localhost:8080
-
-## Compile and minify for production
-```
-npm run build
-```
-
-Files are built to `./dist`
-
-## Lint and fix files
-```
-npm run lint
-```
-
-## License
-
 The MIT License
 
 Copyright 2019 Travis Horn
